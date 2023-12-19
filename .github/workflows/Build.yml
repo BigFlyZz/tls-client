@@ -12,7 +12,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
 
@@ -22,6 +22,6 @@ jobs:
         go-version: '1.20'
 
     - name: Build
-      run: ./cffi_dist/build.sh SOME_BUILD_IDENTIFIER
+      run: ./cffi_dist/build.sh
 
 
